@@ -1,0 +1,97 @@
+.main{
+    display: flex;
+}
+
+.blockImg{
+    background-color: #fafafa;
+    width: 70%;
+}
+
+.blockImg img{
+    width: 90%;
+}
+
+.blockLogin{
+    position: relative;
+    width: 30%;
+    margin: 20px 50px 0 50px;
+}
+
+.logo img{
+    width: 30%;
+}
+
+.blockLogin form{
+    position: absolute;
+    top: 50px;
+    width: 100%;
+}
+
+.blockLogin form h4{
+    color: #c9240c;
+    /* margin-bottom: 0; */
+    font-size: 15px;
+}
+
+.blockLogin form p{
+    font-size: 10px;
+}
+.blockLogin form hr{
+    margin:0;
+}
+.input {
+    width: 100%;
+    margin-top: 5px;
+}
+
+.input label{
+    font-size: 11px;
+}
+
+.input input{
+    width: 100%;
+    border: #ccc 1px solid;
+    border-radius: 5px;
+    outline: none;
+    padding: 5px;
+    font-size: 12px;
+}
+
+.input input::placeholder{
+    color: #ccc;
+}
+.checkbox{
+    display: flex;
+    margin-top: 5px;
+    justify-content: space-between;
+}
+
+.checkbox .remember{
+    display: flex;
+}
+
+.checkbox .remember label{
+    font-size: 10px;
+    color: #ccc;
+    margin-left: 3px;
+}
+
+.checkbox a{
+    font-size: 10px;
+    float: right;
+    color: #c9240c;
+    text-decoration: none;
+}
+
+.btnLogin{
+    margin-top: 10px;
+}
+
+.btnLogin button{
+    border: none;
+    color: #ffffff;
+    background-color: #c9240c;
+    width: 100%;
+    font-size: 12px;
+    padding: 5px;
+}

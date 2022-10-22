@@ -1,0 +1,51 @@
+.container{
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 400px;
+}
+
+.icon_programming{
+    display: flex;
+}
+
+.block_icon{
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2px;
+}
+
+.icon_html{
+    
+}
+
+.name_programming{
+    margin-left: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.progress{
+    position: relative;
+    background-color:#fafafa;
+    border: 1px solid #efeeee;
+    border-radius: 5px;
+    width: 100%;
+    height: 10px;
+    margin-top: 2px;
+    margin-left: 5px;
+}
+
+.progress_line{
+    position: absolute;
+    display: block;
+    background-color: green;
+    width: 80%;
+    height: 100%;
+    border-radius: 5px;
+}

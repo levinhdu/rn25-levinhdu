@@ -1,0 +1,30 @@
+.blockUi{
+    position: relative;
+    width: 130px;
+    height: 170px;
+    margin: 30px ;
+}
+
+.blockIcon{
+}
+
+.bgIcon{
+    color: #fff;
+    font-size: 30px;
+    margin: 20px;
+}
+
+.blockContent{
+    position: absolute;
+    top: 120px;
+    color: #ffffff;
+    margin-left: 20px;
+}
+
+.text{
+    margin-bottom: 0;
+}
+
+.likes{
+    font-size: 9px;
+}

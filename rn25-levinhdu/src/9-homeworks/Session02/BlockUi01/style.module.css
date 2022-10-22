@@ -1,0 +1,23 @@
+.container{
+  margin: 0 500px;
+  display: flex;
+  text-align: center;
+  font-weight: bold;
+  background-color: #fafafa;
+  border: 1px solid #efeeee;
+  margin-top: 10px;
+  height: 40px;
+  line-height: 40px;
+  color: #ffffff;
+}
+
+.col_left{
+  width: 20%;
+  color: #ffffff;
+  line-height: 40px;
+}
+
+.col_right{
+  display: flex;
+  flex: 1;
+}
