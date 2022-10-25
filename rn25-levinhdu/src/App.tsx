@@ -10,7 +10,6 @@ import './App.css'
 import LifeCycleHook from './Example/LifeCycleHook';
 import BlockUi01 from './9-homeworks/Session02/BlockUi01';
 import BlockUi02 from './9-homeworks/Session02/BlockUi02';
-import Practive from './components/Practive';
 import BlockUi03 from './9-homeworks/Session02/BlockUi03/BlockUi03';
 import Rating from './9-homeworks/Session03/RateBtn/Rating';
 import From from './9-homeworks/2-example/Buoi6/From';
@@ -21,6 +20,9 @@ import RatingClass from './9-homeworks/Session03/RateBtn/RatingClass';
 import Form from './9-homeworks/Session06/Form/Form';
 import InputCustom from './Example/InputCustom/InputCustom';
 import GetFetch from './Example/GetFetch/GetFetch';
+import FormInfo from './9-homeworks/Session07/FormInfo';
+import Practive from './9-homeworks/2-example/Buoi8/Practive';
+import RouteExample from './9-homeworks/Session08/RouteExample';
 
 
 function App() {
@@ -79,8 +81,10 @@ function App() {
 
       {/* <InputCustom/> */}
 
-      <GetFetch/>
-
+      {/* <GetFetch/> */}
+      {/* <FormInfo/> */}
+      {/* <Practive/> */}
+      <RouteExample/>
     </>
   );
 }

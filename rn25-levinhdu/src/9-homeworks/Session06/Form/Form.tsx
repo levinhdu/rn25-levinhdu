@@ -33,7 +33,7 @@ function Form() {
       };
   return (
     <>
-    <div className='main'>
+    <div className='main mt-5'>
         <div className='blockImg'>
             <img src="https://grovia.wpenginepowered.com/wp-content/uploads/2022/08/Grovia-HeroImage.png" alt="" />
         </div>

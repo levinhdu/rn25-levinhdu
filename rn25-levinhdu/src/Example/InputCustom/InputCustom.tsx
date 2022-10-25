@@ -1,6 +1,7 @@
 import React from "react";
 import { useFormik } from "formik";
 import * as Yup from "yup";
+import { useNavigate } from "react-router-dom";
 
 const SignupSchema = Yup.object({
   name: Yup.string()
@@ -10,13 +11,15 @@ const SignupSchema = Yup.object({
 });
 
 function InputCustom() {
+  const navi = useNavigate()
   const formik = useFormik({
     initialValues: {
       name: "",
     },
+
     validationSchema: SignupSchema,
     onSubmit: (values) => {
-      console.log(values);
+      // console.log(values);
       const url = "https://63528cd1a9f3f34c3740db77.mockapi.io/api/v1/users";
       fetch(url, {
         method: "POST",
@@ -26,10 +29,11 @@ function InputCustom() {
         body: JSON.stringify(values),
       })
         .then((response) => response.json())
-        .then((json) => {
-          // Xử lý kết quả JSON ở đây
-          console.log(json);
-        })
+        // .then((json) => {
+        //   // Xử lý kết quả JSON ở đây
+        //   console.log(json);
+        // })
+        .then(()=> navi("/"))
         .catch((error) => {
           // Nếu có lỗi
           console.error(error);
@@ -37,17 +41,18 @@ function InputCustom() {
     },
   });
   return (
-    <form onSubmit={formik.handleSubmit}>
+    <form onSubmit={formik.handleSubmit} className='container mt-3'>
       <div>
+        <label htmlFor="" className="me-5">Name User:</label>
         <input
           name="name"
           value={formik.values.name}
           onChange={formik.handleChange}
           onBlur={formik.handleBlur}
         />
-        <p>{formik.errors.name ?? null}</p>
+        <p className="text-danger">{formik.errors.name ?? null}</p>
       </div>
-      <button type="submit">SAVE</button>
+      <button type="submit" className="btn btn-info ms-5">CREATE</button>
     </form>
   );
 }
